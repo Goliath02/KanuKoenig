@@ -1,26 +1,29 @@
 
-:root{
-   --mainColor: white;
-   --secColor: #2CA9BC;
-   --accColor:#32C4DA;
+:root {
+    --mainColor: white;
+    --secColor: #2CA9BC;
+    --accColor: #32C4DA;
 
-   --fontColor: white;
+    --fontColor: white;
 }
 
 
-
-header{
-   font-family: Inknut Antiqua;;
+nav {
+    font-family: Inknut Antiqua;;
 }
 
-.bg-prim{
-   background-color: var(--mainColor);
+.bg-prim {
+    background-color: var(--mainColor);
 }
 
-.bg-sec{
-   background-color: var(--secColor);
+.bg-sec {
+    background-color: var(--secColor);
 }
 
-.bg-acc{
-   background-color: var(--accColor);
+.bg-acc {
+    background-color: var(--accColor);
+}
+
+.mainFontColor {
+    color: var(--fontColor);
 }
