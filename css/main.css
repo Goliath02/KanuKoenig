@@ -3,13 +3,15 @@
     --mainColor: white;
     --secColor: #2CA9BC;
     --accColor: #32C4DA;
-
     --fontColor: white;
 }
 
+body {
+    background-color: var(--secColor);
+}
 
 nav {
-    font-family: Inknut Antiqua;;
+    font-family: Inknut Antiqua;
 }
 
 .bg-prim {
@@ -27,3 +29,21 @@ nav {
 .mainFontColor {
     color: var(--fontColor);
 }
+
+.kingFont {
+    font-family: "Inknut Antiqua";
+}
+
+.bg-image {
+    background-image: url("../media/background.png");
+    height: 30em;
+}
+
+.bg-image > div, .bg-image > img {
+    opacity: 1;
+}
+
+.mietenButton {
+    background: linear-gradient(270deg, #42DAF1 0.52%, #2CA9BC 100%);
+}
+
