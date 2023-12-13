@@ -31,7 +31,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Boote`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Boote` (
-  `BootId` INT NOT NULL,
+  `BootId` INT NOT NULL AUTO_INCREMENT,
   `TypeId` INT NOT NULL,
   `Kaufdatum` DATE NULL,
   `Farbe` VARCHAR(45) NULL,
@@ -51,7 +51,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Ort`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Ort` (
-  `OrtId` INT NOT NULL,
+  `OrtId` INT NOT NULL AUTO_INCREMENT,
   `PLZ` INT NULL,
   `OrtName` VARCHAR(45) NULL,
   PRIMARY KEY (`OrtId`))
@@ -62,7 +62,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Kunden`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Kunden` (
-  `KundenId` INT NOT NULL,
+  `KundenId` INT NOT NULL  AUTO_INCREMENT,
   `Vorname` VARCHAR(45) NULL,
   `Nachname` VARCHAR(45) NULL,
   `Straße` VARCHAR(45) NULL,
@@ -82,7 +82,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Bestellungen`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Bestellungen` (
-  `BestellungsId` INT NOT NULL,
+  `BestellungsId` INT NOT NULL AUTO_INCREMENT,
   `KundenId` INT NOT NULL,
   `Anzahl` INT NULL,
   `Anfangsdatum` DATE NULL,
